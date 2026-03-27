@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projecten</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="index.html" class="logo">Sufiyan Mistry</a>
+
+            <div class="nav-links">
+                <a href="projecten.html">Projecten</a>
+                <a href="vaardigheden.html">Vaardigheden</a>
+                <a href="overmij.html">Over mij</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="projects-page">
+        <section class="projects-container">
+            <div class="projects-intro">
+                <h1>Projecten</h1>
+                <p>
+                    Op deze pagina presenteer ik mijn projecten per cycle. Per cycle kun je de bijbehorende datapunten bekijken, inclusief toelichting.
+                </p>
+            </div>
+
+            <div class="cycle-list">
+
+                <!-- Cycle 1 -->
+                <article class="cycle-card" onclick="toggleCycle(this)">
+                    <div class="cycle-card-header">
+                        <h2>Cycle 1</h2>
+                        <span class="project-tag">Escape Room</span>
+                    </div>
+
+                    <div class="cycle-card-content">
+                        <div class="project-list">
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 1</h3>
+                                    <span class="project-tag">Escape Room</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cycle 2 -->
+                <article class="cycle-card" onclick="toggleCycle(this)">
+                    <div class="cycle-card-header">
+                        <h2>Cycle 2</h2>
+                        <span class="project-tag">Mobile App</span>
+                    </div>
+
+                    <div class="cycle-card-content">
+                        <div class="project-list">
+
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 2</h3>
+                                    <span class="project-tag">Benchmarkanalyse</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Ik heb samen met mijn projectgroep een benchmarkanalyse uitgevoerd naar applicaties voor het reserveren van vergaderruimtes. We hebben verschillende systemen vergeleken op functionaliteiten, toegankelijkheid en gebruikerservaring.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Ik heb geleerd hoe belangrijk het is om bestaande oplossingen kritisch te analyseren voordat je zelf ontwerpt. Hierdoor kreeg ik beter inzicht in gebruiksvriendelijke ontwerpkeuzes en verbeterpunten.
+                                    </p>
+
+                                    <div class="project-media">
+                                        <img src="./fotos/datapunt2.png"
+                                            alt="Screenshot datapunt 2"
+                                            class="project-img"
+                                            onclick="openPdfModal(event, './pdf/datapunt2.pdf')">
+
+                                        <button class="btn btn-secondary"
+                                            onclick="openPdfModal(event, './pdf/datapunt2.pdf')">
+                                            Bekijk PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 3</h3>
+                                    <span class="project-tag">Design brief</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Samen met mijn projectgroep heb ik een design brief opgesteld voor een mobiele applicatie waarmee medewerkers vergaderruimtes kunnen reserveren. We hebben de doelgroep en het probleem geanalyseerd en de belangrijkste projectkaders vastgelegd.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Ik heb geleerd hoe belangrijk het is om vooraf duidelijke ontwerpdoelen en randvoorwaarden te formuleren. Dit helpt om gerichter te ontwerpen en voorkomt misverstanden binnen een projectteam.
+                                    </p>
+
+                                    <div class="project-media">
+                                        <img src="./fotos/datapunt3.png"
+                                            alt="Screenshot datapunt 3"
+                                            class="project-img"
+                                            onclick="openPdfModal(event, './pdf/datapunt3.pdf')">
+
+                                        <button class="btn btn-secondary"
+                                            onclick="openPdfModal(event, './pdf/datapunt3.pdf')">
+                                            Bekijk PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 4</h3>
+                                    <span class="project-tag">Wireframes</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Tijdens dit datapunt heb ik individueel meerdere concepten uitgewerkt in low- en mid-fidelity wireframes in Figma. Ik heb gebruikersflows ontworpen, feedback verzameld en mijn ontwerp iteratief verbeterd.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Ik heb geleerd hoe wireframes helpen om ideeën visueel te testen en structuur aan te brengen in een applicatie. Door feedback te verwerken kreeg ik beter inzicht in gebruiksvriendelijkheid en visuele hiërarchie.
+                                    </p>
+
+                                    <div class="project-media">
+                                        <img src="./fotos/datapunt4.png"
+                                            alt="Screenshot datapunt 4"
+                                            class="project-img"
+                                            onclick="openPdfModal(event, './pdf/datapunt4.pdf')">
+
+                                        <button class="btn btn-secondary"
+                                            onclick="openPdfModal(event, './pdf/datapunt4.pdf')">
+                                            Bekijk PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 5</h3>
+                                    <span class="project-tag">Pitch eindprototype</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Samen met mijn projectgroep heb ik een high-fidelity prototype ontwikkeld op basis van eerdere wireframes en ontvangen feedback. We hebben het ontwerp getest en het eindprototype gepresenteerd.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Ik heb geleerd hoe belangrijk samenwerking en iteratief testen zijn bij het ontwikkelen van een digitaal product. Daarnaast heb ik ervaring opgedaan met het presenteren van een compleet ontwerpconcept.
+                                    </p>
+
+                                    <div class="project-media">
+                                        <img src="./fotos/datapunt5.png"
+                                            alt="Screenshot datapunt 5"
+                                            class="project-img"
+                                            onclick="openPdfModal(event, './pdf/datapunt5.pdf')">
+
+                                        <button class="btn btn-secondary"
+                                            onclick="openPdfModal(event, './pdf/datapunt5.pdf')">
+                                            Bekijk PDF
+                                        </button>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cycle 3 -->
+                <article class="cycle-card" onclick="toggleCycle(this)">
+                    <div class="cycle-card-header">
+                        <h2>Cycle 3</h2>
+                        <span class="project-tag">Hackathon</span>
+                    </div>
+
+                    <div class="cycle-card-content">
+                        <div class="project-list">
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 6</h3>
+                                    <span class="project-tag">Hackathon</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cycle 4 -->
+                <article class="cycle-card" onclick="toggleCycle(this)">
+                    <div class="cycle-card-header">
+                        <h2>Cycle 4</h2>
+                        <span class="project-tag">Bedrijfsproject</span>
+                    </div>
+
+                    <div class="cycle-card-content">
+                        <div class="project-list">
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 7</h3>
+                                    <span class="project-tag">Bedrijfsproject</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cycle 5 -->
+                <article class="cycle-card" onclick="toggleCycle(this)">
+                    <div class="cycle-card-header">
+                        <h2>Cycle 5</h2>
+                        <span class="project-tag">Individueel project</span>
+                    </div>
+
+                    <div class="cycle-card-content">
+                        <div class="project-list">
+                            <article class="project-card" onclick="toggleProject(event, this)">
+                                <div class="project-card-header">
+                                    <h3>Datapunt 8</h3>
+                                    <span class="project-tag">Individueel project</span>
+                                </div>
+
+                                <div class="project-card-content">
+                                    <h4>Wat heb ik gedaan?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+
+                                    <h4>Wat heb ik geleerd?</h4>
+                                    <p>
+                                        Dit volgt nog.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="pdf-overlay" id="pdfOverlay" onclick="closePdfModal(event)">
+        <div class="pdf-modal">
+            <button class="pdf-close" onclick="closePdfModal(event)">×</button>
+            <iframe id="pdfFrame" class="pdf-frame" src=""></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleCycle(selected) {
+            const allCycles = document.querySelectorAll('.cycle-card');
+
+            allCycles.forEach(cycle => {
+                if (cycle !== selected) {
+                    cycle.classList.remove('active');
+                }
+            });
+
+            selected.classList.toggle('active');
+        }
+
+        function toggleProject(event, selected) {
+            event.stopPropagation();
+
+            const parentCycle = selected.closest('.cycle-card');
+            const allProjects = parentCycle.querySelectorAll('.project-card');
+
+            allProjects.forEach(project => {
+                if (project !== selected) {
+                    project.classList.remove('active');
+                }
+            });
+
+            selected.classList.toggle('active');
+        }
+
+        function openPdfModal(event, pdfFile) {
+            event.stopPropagation();
+            const overlay = document.getElementById("pdfOverlay");
+            const frame = document.getElementById("pdfFrame");
+
+            frame.src = pdfFile;
+            overlay.classList.add("active");
+        }
+
+        function closePdfModal(event) {
+            const overlay = document.getElementById("pdfOverlay");
+            const frame = document.getElementById("pdfFrame");
+
+            if (!event || event.target === overlay || event.target.classList.contains("pdf-close")) {
+                overlay.classList.remove("active");
+                frame.src = "";
+            }
+        }
+
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") {
+                closePdfModal();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
